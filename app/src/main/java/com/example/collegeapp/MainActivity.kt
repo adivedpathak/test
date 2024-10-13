@@ -19,6 +19,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.collegeapp.NavigationSetup.NavigationFun
+import com.example.collegeapp.Screens.SplashScreen
 import com.example.collegeapp.ui.theme.CollegeAppTheme
 import kotlinx.serialization.Serializable
 
@@ -28,8 +29,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             CollegeAppTheme {
-                val navController = rememberNavController()
-                NavigationFun(navController)
+       SplashScreen()
             }
         }
     }

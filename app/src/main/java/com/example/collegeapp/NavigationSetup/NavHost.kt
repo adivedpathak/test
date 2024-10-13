@@ -8,6 +8,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.collegeapp.Screens.SplashScreen
 
 @Composable
 fun NavigationFun(navController:NavHostController) {
@@ -20,7 +21,8 @@ fun NavigationFun(navController:NavHostController) {
 //    HomeScreen()
         }
         composable(Routes.Splash.route) {
-//    HomeScreen()
+//    HomeScreen(
+            SplashScreen()
         }
         composable(Routes.About.route) {
 //    HomeScreen()
